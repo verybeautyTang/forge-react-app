@@ -1,1 +1,17 @@
+# development
 /node_modules
+
+#product
+/dist
+
+# yalc
+.yalc
+yalc.lock
+
+# lock
+pnpm.lock
+
+# misc
+npm-debug.log*
+pnpm-debug.log*
+pnpm-error.log*

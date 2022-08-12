@@ -11,4 +11,10 @@ pnpm init 构建package.json
 4、
 
 # 第三步：
-添加ignore文件，每次提交的代码的时候，有一些文件不要提交上去【node_module、dist、error】
+添加ignore文件，每次提交的代码的时候，有一些文件不要提交上去
+node_module -> 因为lock里面已经存在了锁版文件，可以直接通过pnpm install 进行下载安装，而且node_modules文件又很大，上传耗时很长
+dist -> 打包的文件也没有必要传递上去
+pnpm-error.log -> 安装错误日志
+# yalc
+.yalc
+yalc.lock
