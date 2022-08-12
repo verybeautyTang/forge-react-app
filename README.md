@@ -1,5 +1,5 @@
 # forge-react-app
-手搭一个react-app，伪造cro
+手搭一个react-app，伪造cra
 # 第一步：
 pnpm init 构建package.json
 
@@ -15,6 +15,5 @@ pnpm init 构建package.json
 node_module -> 因为lock里面已经存在了锁版文件，可以直接通过pnpm install 进行下载安装，而且node_modules文件又很大，上传耗时很长
 dist -> 打包的文件也没有必要传递上去
 pnpm-error.log -> 安装错误日志
-# yalc
-.yalc
-yalc.lock
+.yalc -> 模拟发包
+yalc.lock -> 模拟发包的锁版文件
