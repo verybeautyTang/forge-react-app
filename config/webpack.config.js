@@ -55,6 +55,6 @@ module.exports ={
     host: "127.0.0.1",
     port: 9000,
     open: true,
-    hot: true,
+    hot: true, // 控制模块热更
   }
 }

@@ -101,10 +101,13 @@ react-router-config
   .配置webpack文件
     1、先让页面正常运转起来
     2、引入less
-    3、页面热更新
+    3、页面热更新【webpack5内嵌了模块的热更新】
     4、git提交规范
     5、husky、pritter规范
-    6、
+    6、添加插件、loader 
+      ** MiniCssExtractPlugin : https://webpack.docschina.org/plugins/mini-css-extract-plugin/
+      ** 
+    
 
     
 
