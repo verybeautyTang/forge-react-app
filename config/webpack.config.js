@@ -11,7 +11,7 @@ module.exports ={
   target: 'web',
   output: {
     publicPath: "/",
-    path: resolve(__dirname, "../dist"),
+    path: resolve(__dirname, "dist"),
     filename: 'bundle.js'
   },
   resolve: {
@@ -21,7 +21,7 @@ module.exports ={
     }
   },
   module: {
-    rules: [
+    rules: [ // react
       {
         test: /\.(js|jsx|ts|tsx)$/,
         exclude: /node_modules/,
@@ -32,6 +32,14 @@ module.exports ={
             presets: ['@babel/preset-env', "@babel/preset-react"]
           }
         }
+      },
+      { // 样式
+        test: /\.less$/,
+        use:[ 'style-loader',
+      {
+        loader: 'css-loader',
+
+      }],
       }
     ]
   },
@@ -47,6 +55,6 @@ module.exports ={
     host: "127.0.0.1",
     port: 9000,
     open: true,
-    hot: true,
+    hot: true, // 控制模块热更
   }
 }

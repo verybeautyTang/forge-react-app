@@ -79,3 +79,36 @@ recat-router
 react-redux
 react-router-dom
 react-router-config
+
+第五步： 配置webpack
+在配置Webpack的时候会遇到很多坑。一开始不要想着直接把开发环境、和生产环境完全分开。可以一步一步来
+ .下载webpack相关的包：
+      "typescript": "^4.7.4",
+      "webpack": "^5.74.0",
+      "webpack-cli": "^4.10.0",
+      "webpack-dev-server": "^4.10.0"
+ .下载babel相关配置的包
+    因为打包本来就是webpack与babel进行配合（babel解析es6语法为es5，以及解析tsx语法等）
+  需下载的相关的包有：
+      "@babel/core": "^7.18.10",
+      "@babel/plugin-transform-runtime": "^7.18.10",
+      "@babel/plugin-transform-typescript": "^7.18.12",
+      "@babel/preset-env": "^7.18.10",
+      "@babel/preset-react": "^7.18.6",
+      "@babel/preset-typescript": "^7.18.6",
+  .配置babel --> 官网如下：https://www.babeljs.cn/
+  .配置.babelrc.json
+  .配置webpack文件
+    1、先让页面正常运转起来
+    2、引入less
+    3、页面热更新【webpack5内嵌了模块的热更新】
+    4、git提交规范
+    5、husky、pritter规范
+    6、添加插件、loader 
+      ** MiniCssExtractPlugin : https://webpack.docschina.org/plugins/mini-css-extract-plugin/
+      ** 
+    
+
+    
+
+ 
