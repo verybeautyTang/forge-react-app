@@ -98,12 +98,18 @@ react-router-config
       "@babel/preset-typescript": "^7.18.6",
   .配置babel --> 官网如下：https://www.babeljs.cn/
   .配置.babelrc.json
+  
   .配置webpack文件
     1、先让页面正常运转起来
     2、引入less
     3、页面热更新【webpack5内嵌了模块的热更新】
     4、git提交规范
+      ** 安装commitizen
     5、husky、pritter规范
+      ** 下载eslint prettier eslint-config-prettier
+      ** 命令行里面输入 pnpm create @eslint/config 配置eslint
+      ** 根目录添加.prettierrc.ts文件
+      ** 根目录添加.prettierignore.ts文件
     6、添加插件、loader 
       ** MiniCssExtractPlugin : https://webpack.docschina.org/plugins/mini-css-extract-plugin/
       ** 
