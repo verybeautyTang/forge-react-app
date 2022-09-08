@@ -1,10 +1,7 @@
-// import React from 'react'
-// import { render } from 'react-dom'
-// import { Provider } from 'react-redux'
-// const ROOT_ELEMENT = document.getElementById('root')
-// render(
-//   <Provider store={}>
-//     <div>hello</div>
-//   </Provider>, ROOT_ELEMENT
-// )
+import React from 'react'
+import { createRoot } from 'react-dom/client'
+import App from './App'
 
+const container = document.getElementById('root');
+const root = createRoot(container!); 
+root.render(<div>hello 怎么可以没有编译出来<App /></div>)
