@@ -1,41 +1,48 @@
 {
-    "env": {
-        "browser": true,
-        "commonjs": true,
-        "es2021": true
-    },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended"
-    ],
-    "overrides": [
-    ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react",
-        "@typescript-eslint"
-    ],
+    "extends": ["plugin:prettier/recommended"],
     "rules": {
-        "indent": [
-            "error",
-            "tab"
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "double"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ]
+      "import/no-default-export": 0,
+      "@typescript-eslint/explicit-module-boundary-types": 0,
+      "@typescript-eslint/naming-convention": 0,
+      "react/require-default-props": 0,
+      "react-hooks/exhaustive-deps": "warn",
+      "react/no-multi-comp": 0,
+      "promise/no-promise-in-callback": 0,
+      "promise/catch-or-return": [2, { "allowFinally": "true" }],
+      "@typescript-eslint/no-empty-function": 0,
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        {
+          "args": "after-used"
+        }
+      ],
+      "react/display-name": 0,
+      "@typescript-eslint/ban-ts-comment": 0,
+      "react/no-array-index-key": "off",
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": false
+        }
+      ],
+      "import/order": [
+        2,
+        {
+          "newlines-between": "always",
+          "groups": ["builtin", "external", "internal", "parent", "sibling", "index", "unknown", "object", "type"],
+          "alphabetize": {
+            "order": "asc",
+            "caseInsensitive": true
+          },
+          "pathGroups": [
+            {
+              "pattern": "react*",
+              "group": "external",
+              "position": "before"
+            }
+          ]
+        }
+      ]
     }
-}
+  }
+  
