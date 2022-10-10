@@ -138,7 +138,7 @@ const config = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: "区域运营平台",
+      title: "test",
       template: `${paths.public}/index.html`, // template file
       favicon: `${paths.public}/favicon.ico`,
       filename: "index.html", // output file
