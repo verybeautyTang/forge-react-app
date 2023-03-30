@@ -2,8 +2,8 @@
 
 const { resolve } = require("path");
 
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+// const HtmlWebpackPlugin = require("html-webpack-plugin");
+// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 // ts、tsx、js、jsx
 const tsRegTest = /\.(js|jsx|ts|tsx)$/;
@@ -14,17 +14,17 @@ const cssModuleRegTest = /\.module\.css$/;
 const lessRegTest = /\.less$/;
 const lessModuleRegTest = /\.module\.less$/;
 
-const cssModuleOptions = (type, useModules) => {
-	const options = { importLoaders: type || 1 };
-	if (useModules) {
-		options.modules = {
-			localIdentName: "[path][name]_[hash:base64:5]", // 允许配置生成的本地标识符(ident)。
-			localIdentHashSalt: "hash", // 允许添加自定义哈希值以生成更多唯一类
-			exportLocalsConvention: "camelCase", // 驼峰命名
-		};
-	}
-	return options;
-};
+// const cssModuleOptions = (type, useModules) => {
+// 	const options = { importLoaders: type || 1 };
+// 	if (useModules) {
+// 		options.modules = {
+// 			localIdentName: "[path][name]_[hash:base64:5]", // 允许配置生成的本地标识符(ident)。
+// 			localIdentHashSalt: "hash", // 允许添加自定义哈希值以生成更多唯一类
+// 			exportLocalsConvention: "camelCase", // 驼峰命名
+// 		};
+// 	}
+// 	return options;
+// };
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin")
 const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
@@ -35,7 +35,7 @@ const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPl
 const paths = require("./paths")
 const CssPlugin = require("./plugins/CssPlugin")
 
-const isDev = process.env.NODE_ENV === "development"
+// const isDev = process.env.NODE_ENV === "development"
 const analyse = process.env.analyse === "1"
 
 const jstsRegex = /\.(js|jsx|ts|tsx)$/

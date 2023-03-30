@@ -41,7 +41,7 @@ specifiers:
   react-refresh: ^0.14.0
   react-router: ^6.3.0
   react-router-config: ^5.1.1
-  react-router-dom: '6'
+  react-router-dom: ^6.3.0
   style-loader: ^3.3.1
   typescript: ^4.7.4
   webpack: ^5.74.0
@@ -90,8 +90,8 @@ devDependencies:
   mini-css-extract-plugin: 2.6.1_webpack@5.74.0
   postcss: 8.4.16
   postcss-loader: 7.0.1_qjv4cptcpse3y5hrjkrbb7drda
-  prettier: 2.7.1,
-  progress-bar-webpack-plugin: 2.1.0_webpack@5.74.0,
+  prettier: 2.7.1
+  progress-bar-webpack-plugin: 2.1.0_webpack@5.74.0
   react-router-dom: 6.3.0_biqbaboplfbrettd7655fr4n2y
   style-loader: 3.3.1_webpack@5.74.0
   typescript: 4.7.4
@@ -2367,9 +2367,11 @@ packages:
       get-intrinsic: 1.1.2
       is-string: 1.0.7
     dev: true
+
   /array-tree-filter/2.1.0:
     resolution: {integrity: sha512-4ROwICNlNw/Hqa9v+rk5h22KjmzB1JGTMVKP2AKJBOCgb0yL0ASf0+YvCcLNNwquOHNX48jkeZIJ3a+oOQqKcw==}
     dev: false
+
   /array-union/1.0.2:
     resolution: {integrity: sha512-Dxr6QJj/RdU/hCaBjOfxW+q6lyuVE6JFWIrAUpuOOhoJJoQ99cUn3igRaHVB5P9WrgFVN0FfArM3x0cueOU8ng==}
     engines: {node: '>=0.10.0'}
@@ -4845,11 +4847,11 @@ packages:
   /moment/2.29.4:
     resolution: {integrity: sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==}
     dev: false
+
   /mrmime/1.0.1:
     resolution: {integrity: sha512-hzzEagAgDyoU1Q6yg5uI+AorQgdvMCur3FcKf7NhMKWsaYg+RnbTyHRa/9IlLF9rf455MOCtcqqrQQ83pPP7Uw==}
     engines: {node: '>=10'}
     dev: true
-
 
   /ms/2.0.0:
     resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}
